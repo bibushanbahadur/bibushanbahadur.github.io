@@ -1,55 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <!-- Link to external style sheet -->
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color:#111; 
+        }
+        .main {
+          display:flex; 
+          flex-wrap : wrap; 
+          justify-content:center; 
+          align-items:center; 
+          margin-top : 20px; 
+          margin-bottom : 20px;
+        }
+        .main div {
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: calc(33.33% - 20px);
+            transition: transform .2s;
+        }
+        .main div:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header section -->
-    <header id="header">
-        <h1>John Doe</h1>
-        <p>Web Developer</p>
-    </header>
-
-    <!-- Navigation section -->
-    <nav id="nav">
-        <ul>
-            <li><a href="#intro">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <!-- Add more links as needed -->
-        </ul>
-    </nav>
-
-    <!-- Introduction section -->
-    <section id="intro">
-        <h2>About Me</h2>
-        <p>I am a web developer with 3 years of experience in creating responsive and dynamic websites using HTML, CSS and JavaScript.</p>
-        <!-- Add more content as needed -->
-    </section>
-
-    <!-- Education section -->
-    <section id="education">
-        <h2>Education</h2>
-        <!-- Use a table or a list to display your education details -->
-        <!-- Add more content as needed -->
-    </section>
-
-    <!-- Skills section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <!-- Use a progress bar or a chart to display your skill levels -->
-        <!-- Add more content as needed -->
-    </section>
-
-     <!-- Work Experience section -->
-     <!-- Projects section -->
-
-     <!-- Link to external JavaScript file -->
-     <script src="script.js"></script>
-
-</body>
-</html>
+    <div class="header">
+        <h1>My Portfolio</h1>
+    </div>
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="main">
+      <div id="home">
+          <h2>Home</h2>
+          <p>Welcome to my portfolio website.</p>
+      </div> 
+      <div id="about">
+          <h2>About Me</h2>
+          <p>I am a web developer with experience in HTML, CSS and JavaScript.</p>
+        </div>
+        <div id="projects">
+            <h2>My Projects</h2>
+            <p>Here are some of my recent projects:</p>
+            <ul>
+              <button><li><a href="#">webpage 1</a></li></button>  
+                <button><li><a href="#">webpage 2</a></li></button>
+                <button><li><a href="#">webpage 3</a></li></button>
+            </ul>
+        </div> 
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <p>You can contact me at:</p>
+            <ul>
+                <li>yaseengiri001@gmail.com</li>
+                <li>Phone: 9843698536</li>
+            </ul> 
+        </div> 
+      </div>
+  
+      <div class="footer">
+          &copy; 2023 My Portfolio
+      </div>
