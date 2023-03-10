@@ -1,0 +1,252 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    }
+    nav ul {
+    display: flex;
+    list-style: none;
+    }
+    nav ul li {
+    margin-right: 20px;
+    }
+    nav ul li:last-child {
+    margin-right: 0;
+    }
+    nav ul li a {
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+    }
+    nav ul li a:hover {
+    background-color: #a3a2a2;
+    }
+    
+    /* Home Section Styles */
+    #home {
+    height: 100vh;
+    background-image: url('home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    }
+    #home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    }
+    #home p {
+    font-size: 1.5rem;
+    }
+    
+    /* About Section Styles */
+    #about {
+    padding: 80px 20px;
+    text-align: center;
+    }
+    #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    }
+    #about p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    }
+    
+    /* Portfolio Section Styles */
+    #portfolio {
+    padding: 80px 20px;
+    text-align: center;
+    }
+    #portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    }
+    .portfolio-item {
+    margin-bottom: 40px;
+    }
+    .portfolio-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    }
+    .portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    }
+    .portfolio-item p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    }
+    .portfolio-item a {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+    }
+    .portfolio-item a:hover {
+    background-color: #222;
+    }
+    
+    /* Skills Section Styles */
+    #skills {
+    padding: 80px 20px;
+    text-align: center;
+    }
+    #skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    }
+    #skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    }
+    #skills li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 3px;
+    }
+    
+    /* Contact Section Styles */
+    #contact {
+    padding: 80px 20px;
+    text-align: center;
+    }
+    #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    }
+    #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    }
+    #contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    }
+    #contact input,
+    #contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px
+}
+
+#contact input[type="submit"] {
+background-color: #333;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 3px;
+transition: background-color 0.3s ease-in-out;
+}
+#contact input[type="submit"]:hover {
+background-color: #222;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+nav {
+flex-direction: column;
+align-items: flex-start;
+height: auto;
+}
+nav ul {
+margin-top: 20px;
+flex-direction: column;
+}
+nav ul li {
+margin-right: 0;
+margin-bottom: 10px;
+}
+.portfolio-item img {
+max-width: 100%;
+}
+}
+
+@media (max-width: 576px) {
+#home h1 {
+font-size: 2.5rem;
+}
+#home p {
+font-size: 1.25rem;
+}
+#about h2 {
+font-size: 2rem;
+}
+#about p {
+font-size: 1.1rem;
+}
+#portfolio h2 {
+font-size: 2rem;
+}
+.portfolio-item h3 {
+font-size: 1.25rem;
+}
+.portfolio-item p {
+font-size: 1.1rem;
+}
+#skills h2 {
+font-size: 2rem;
+}
+#skills li {
+margin-right: 10px;
+margin-bottom: 10px;
+padding: 5px;
+font-size: 0.9rem;
+}
+#contact h2 {
+font-size: 2rem;
+}
+#contact label {
+font-size: 1.1rem;
+}
+#contact input,
+#contact textarea {
+font-size: 1.1rem;
+}
+#contact input[type="submit"] {
+font-size: 1.1rem;
+padding: 10px 15px;
+}
+}
+
+
