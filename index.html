@@ -1,99 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        .header h1 {
-            margin: 0;
-        }
-        .nav {
-            overflow: hidden;
-            background-color: #333;
-        }
-        .nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .nav a:hover {
-            background-color:#111; 
-        }
-        .main {
-          display:flex; 
-          flex-wrap : wrap; 
-          justify-content:center; 
-          align-items:center; 
-          margin-top : 20px; 
-          margin-bottom : 20px;
-        }
-        .main div {
-            margin: 10px;
-            padding: 20px;
-            text-align: center;
-            width: calc(33.33% - 20px);
-            transition: transform .2s;
-        }
-        .main div:hover {
-            transform: scale(1.1);
-        }
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-        }
-    </style>
+	<title>Web Developer Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>My Portfolio</h1>
-    </div>
-    <div class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-    <div class="main">
-      <div id="home">
-          <h2>Home</h2>
-          <p>Welcome to my portfolio website.</p>
-      </div> 
-      <div id="about">
-          <h2>About Me</h2>
-          <p>I am a web developer with experience in HTML, CSS and JavaScript.</p>
-        </div>
-        <div id="projects">
-            <h2>My Projects</h2>
-            <p>Here are some of my recent projects:</p>
-            <ul>
-              <button><li><a href="#">webpage 1</a></li></button>  
-                <button><li><a href="#">webpage 2</a></li></button>
-                <button><li><a href="#">webpage 3</a></li></button>
-            </ul>
-        </div> 
-        <div id="contact">
-            <h2>Contact Me</h2>
-            <p>You can contact me at:</p>
-            <ul>
-                <li>yaseengiri001@gmail.com</li>
-                <li>Phone: 9843698536</li>
-            </ul> 
-        </div> 
-      </div>
-  
-      <div class="footer">
-          &copy; 2023 My Portfolio
-      </div>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="home">
+		<h1>Welcome to my Portfolio</h1>
+		<p>I am a Web Developer with experience in...</p>
+	</section>
+
+	<section id="about">
+		<h2>About Me</h2>
+		<p>I am an aspiring coder with interest in web designing.</p>
+	</section>
+
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		<div class="portfolio-item">
+			<img src="example-image.jpg" alt="Example Image">
+			<h3>Project Title</h3>
+			<p>Project Description</p>
+			<a href="#">View Project</a>
+		</div>
+		<!-- Repeat portfolio-item div for each project in your portfolio -->
+	</section>
+
+	<section id="skills">
+		<h2>Skills</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>PHP</li>
+			<!-- Add more skills as needed -->
+		</ul>
+	</section>
+
+	<section id="contact">
+		<h2>Contact Me</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 Web Developer Portfolio. All Rights Reserved.</p>
+	</footer>
+	
+	<script src="script.js"></script>
+</body>
+</html>
